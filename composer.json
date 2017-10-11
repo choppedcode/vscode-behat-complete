@@ -1,0 +1,5 @@
+{
+    "require": {
+        "haringsrob/behat-parser": "dev-master"
+    }
+}
