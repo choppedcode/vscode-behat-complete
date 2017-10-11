@@ -3,7 +3,7 @@
     "displayName": "behatComplete",
     "description": "Behat autocomplete",
     "version": "0.1.0",
-    "publisher": "Harings Rob",
+    "publisher": "haringsrob",
     "engines": {
         "vscode": "^1.17.0"
     },
@@ -12,7 +12,7 @@
         "url": "https://github.com/haringsrob/behatcomplete.git"
     },
     "categories": [
-        "Autocomplete"
+        "Languages"
     ],
     "extensionDependencies": [
         "stevejpurves.cucumber"
