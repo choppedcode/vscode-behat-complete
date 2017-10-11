@@ -5,7 +5,7 @@ Behatcomplete provides auto completion for your behat step definitions.
 ## Features
 
 Currently it uses the output of the `behat -dl` command to provide auto completion.
-![Kiku](doc-assets/exampleautocomplete.gif)
+![Kiku](https://github.com/haringsrob/behatcomplete/blob/develop/doc-assets/exampleautocomplete.gif?raw=true)
 
 ## Requirements
 
