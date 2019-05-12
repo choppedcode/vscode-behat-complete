@@ -1,5 +1,5 @@
 node_modules
 .vscode/
 .vscode-test/
-.vsix
-.idea
+*.vsix
+out/

@@ -1,40 +1,38 @@
-# behatcomplete
+# Behat Complete
 
-Behatcomplete provides auto completion for your behat step definitions.
+Behat Definitions provides auto completion for your Gherkin steps based on your Behat definitions.
 
 ## Features
 
-Currently it uses the output of the `behat -dl` command to provide auto completion.
-![Kiku](https://github.com/haringsrob/behatcomplete/blob/develop/doc-assets/exampleautocomplete.gif?raw=true)
+The extension uses the output of the `behat -di` command to provide auto completion.
+![Kiku](https://github.com/choppedcode/vscode-behat-complete/blob/develop/doc-assets/exampleautocomplete.gif?raw=true)
 
 ## Requirements
 
-Currently it requires behat to be available in `vendor/bin/behat` and `behat.yml` should
-be in the `tests/behat.yml` location of your project root. 
-
-This will be configurable/autodiscovered soon.
+* The extension requires a Behat formatter extension to be installed. It has been tested with Cucumber (Gherkin) Full Support.
 
 ## Extension Settings
 
-Soon the settings will be available:
-* `behatcomplete.enable`: enable/disable this extension
-* `behatcomplete.config_location`: relative path to behat.yml
-* `behatcomplete.executable`: path to the behat executable if not in vendor directory
+The following settings should be set:
+* `behat.command`: Behat command, e.g. /usr/bin/behat, should include the full path. The default is `[WSROOT]/vendor/bin/behat`.
+* `behat.configFile`: Behat config file, e.g. behat.yml, should include the full path. The default is `[WSROOT]/tests/behat.yml`.
 
-## Known Issues
+And the following setting is optional:
+* `behat.suite`: Behat test suite to analyse for definitions, leave blank if all suites should be analysed.
 
-* When editing a line, it always appends
+## Attributions
 
-## Disclamer
-
-This is a work in progress. The extension is working, however not optimized yet.
-
-The code contains "clutter" that needs to be removed and ideally this extension
-will work independent of the behat executable. (Using the following parser: 
-[BehatParser](https://github.com/haringsrob/BehatParser)
+Behat logo by [The Behat Project](http://behat.org) is licensed under [Creative Commons Attribution-ShareAlike
+4.0 International License](https://raw.githubusercontent.com/Behat/logo/master/LICENSE)
 
 ## Release Notes
 
 ### 0.1.0
 
-Initial release
+* Initial release
+
+## 0.2.0
+
+* Refactored to TypeScript
+* Added various settings
+* Use `behat -di` instead of `behat -dl` to get more info about the Behat definitions
